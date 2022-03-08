@@ -1,0 +1,61 @@
+<!-- Information to the browser about what document type to expect. -->
+<!DOCTYPE html> 
+
+<!-- Root of the HTML Document -->
+<html>
+
+<!-- Link to an external style sheet -->
+<link rel="stylesheet" href="mini4.css">
+
+<!-- Section of the HTML Document that will be directly visible on web page -->
+<body>
+
+<h1>Registration Form</h1>
+Please fill in all fields and click Register.<br>
+<h2>User Information</h2>
+
+<form method="post" action="mini4.php">
+
+    <!-- First Name -->
+    <label>First name:</label>
+    <input type="text" name="firstname" placeholder="Enter first name here"/> <br><br>
+
+    <!-- Last Name -->
+    <label>Last name:</label>
+    <input type="text" name="lastname" placeholder="Enter last name here"/> <br><br>
+
+    <!-- Email Address -->
+    <label>Email:</label>
+    <input type="text" name="email" placeholder="Enter email address here"/> <br><br>
+
+    <!-- Phone Number -->
+    <label>Phone:</label>
+    <input type="text" name="phone" placeholder="Enter phone number here"/> <br><br>
+
+<!-- Book -->
+<h2>Publications</h2>
+Which book would you like information about?<br>
+<select name="book">
+    <option value="----------------------------------------------------------" >----------------------------------------------------------</option>
+    <option value="Internet and WWW How to Program" >Internet and WWW How to Program</option>
+    <option value="Introduction to Algorithms">Introduction to Algorithms</option>
+    <option value="Introduction to Software Design with Java">Introduction to Software Design with Java</option>
+    <option value="Software Systems">Software Systems</option>
+    <option value="Intel x86">Intel x86</option>
+</select><br><br>
+
+<!-- Operating System -->
+<h2>Operating Systems</h2>
+Which operating system do you use?<br>
+<input type="radio" NAME="operatingsystem" VALUE="Windows"> Windows
+<input type="radio" NAME="operatingsystem" VALUE="Mac OS X"> Mac OS X
+<input type="radio" NAME="operatingsystem" VALUE="Linux"> Linux
+<input type="radio" NAME="operatingsystem" VALUE="Other"> Other<br><br>
+
+<!-- Submission Button -->
+<input type="submit" name="submit" value="Register">
+</form>
+
+</body>
+</html>
+<!-- End of Program -->
